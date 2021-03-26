@@ -35,7 +35,7 @@ func handleRequest(w dns.ResponseWriter, r *dns.Msg) {
 }
 
 func main() {
-	var addr = flag.String("addr", "127.0.0.1:5300", "listen address")
+	var addr = flag.String("addr", "0.0.0.0:5300", "listen address")
 	var ip = flag.String("ip", "127.0.0.1", "resolve ipv4 address")
 
 	flag.Parse()
